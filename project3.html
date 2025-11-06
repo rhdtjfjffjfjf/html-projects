@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html{
+        width: 720px;
+        margin: 0 auto;
+      }
+      /* body {
+        width: 720px;
+        margin: 0 auto;
+      } */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0;
+      }
+      .header1 {
+        display: flex;
+        gap: 25px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      h3 {
+        font-size: 28px;
+      }
+      .proionta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 20px;
+        justify-items: center;
+      }
+      .t-shirt {
+        text-align: start;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 270px;
+        border-radius: 12px;
+        font-weight: bold;
+      }
+      .t-shirt p {
+        margin-top: 2px;
+        margin-bottom: 7px;
+        font-size: 20px;
+        margin-left: 12px;
+      }
+      .icon {
+        background-color: #dfd8d8;
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .t-shirt button {
+        margin-left: 12px;
+        margin-bottom: 18px;
+        color: #fff;
+        background-color: black;
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      
+      .telos p:first-child{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .telos p:nth-child(2){
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+
+      }
+      .telos p:nth-child(3){
+        color: #444;
+        margin-bottom: 12px;
+      }
+      .telos p:nth-child(4){
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+      .telos p:nth-child(5){
+        margin-bottom: 12px;
+        color: #444;
+      }
+      footer{
+        margin-bottom: 100px;
+        text-align: center;
+        color: #444;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h3>Shop</h3>
+        <div class="header1">
+          <p>Home</p>
+          <p>About</p>
+          <p>Contact</p>
+        </div>
+      </div>
+      <div class="proionta">
+        <div class="t-shirt">
+          <img src="CocoCapitan_Product-Front-Web.webp" class="icon" />
+          <p>Basic T-Shirt</p>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="t-shirt hoddy">
+          <img
+            src="DST.H.03-ZIGZAC-14u-Hellenic-Fashion-Brand-Colorful-Modern-stylish-trendy-bucket-hat-cotton-beautiful-Luxury-limited-Style-woman-gift-exclusive-black-300x300.jpeg"
+            class="icon"
+          />
+          <p>Hoddy T-Shirt</p>
+          <p>$149.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="t-shirt">
+          <img
+            src="DST.H.03-ZIGZAC-14u-Hellenic-Fashion-Brand-Colorful-Modern-stylish-trendy-bucket-hat-cotton-beautiful-Luxury-limited-Style-woman-gift-exclusive-black-300x300.jpeg"
+            class="icon"
+          />
+          <p>Black Hat</p>
+          <p>$49.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="t-shirt">
+          <img
+            src="03327fd83100ea0ac0ea43905e99469c516c317eaf9f15d57270167a3361bf3b.webp"
+            class="icon"
+          />
+          <p>Summer T-Shirt</p>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="telos">
+        <p>Latest Articles</p>
+        <p>Article Title 1</p>
+        <p>January 1,2024</p>
+        <p>Article Title 2</p>
+        <p>February 21,2024</p>
+      </div>
+      <footer>&#xa9 All rights Deserved 2025</footer>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        width: 720px;
+        margin: 40px auto;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      ul {
+        display: flex;
+        gap: 12px;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .section {
+        margin-top: 20px;
+        background-color: #0e6fbe;
+        padding: 40px 35px;
+        border-radius: 8px;
+        padding-bottom: 20px;
+      }
+      .big-one {
+        color: #fff;
+        font-size: 30px;
+        width: 340px;
+        line-height: 33px;
+        margin-bottom: 12px;
+      }
+      .block {
+        display: flex;
+        align-items: flex-start;
+      }
+      .second {
+        color: #fff;
+        width: 320px;
+        line-height: 25px;
+      }
+      .button {
+        text-decoration: none;
+
+        color: #0e6fbe;
+        padding: 8px 8px;
+        border-radius: 8px;
+        height: auto;
+        background-color: #fff;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .section-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .upo-section {
+        border-bottom: 1px solid gray;
+      }
+      .upo-section img {
+        width: 100px;
+        margin-top: 20px;
+      }
+      .anamesa {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 7px;
+      }
+      .anamesa p:first-child {
+        width: 150px;
+        margin-bottom: 5px;
+      }
+      .anamesa p:nth-child(2) {
+        color: #444;
+        font-size: 12px;
+      }
+      .paragraph {
+        width: 400px;
+        margin-bottom: 12px;
+      }
+      .upo-section a {
+        display: inline-block;
+        margin-bottom: 19px;
+        text-decoration: none;
+      }
+      .telos {
+        margin-bottom: 20px;
+      }
+      .centerofpage {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .dejia {
+        margin-top: 20px;
+      }
+      .anazitisi {
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 17px;
+      }
+      input {
+        padding: 8px 3px;
+
+        margin-bottom: 20px;
+      }
+      input:focus {
+        outline: none;
+      }
+      .katigoria {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .css {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 12px;
+      }
+      .prosfata-ar p:first-child {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .prosfata-ar p:nth-child(2) {
+        width: 140px;
+        margin-bottom: 12px;
+        line-height: 22px;
+      }
+      .prosfata-ar p:nth-child(3) {
+        margin-bottom: 15px;
+        width: 60%;
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>My blog</h1>
+
+        <ul>
+          <lu>Αρχική</lu>
+          <lu>Κατηγορίες</lu>
+          <lu>Σχετικά</lu>
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <p class="big-one">Ενημερωτικα αρθρα για web development & design</p>
+      <div class="block">
+        <p class="second">
+          Μαθηματα, οδηγοι και πρακτικα παραδειγματα για HTML, CSS, JavaScript
+          και responsive design.
+        </p>
+        <a href="#" class="button">Δες τα τελευταια αρθρα</a>
+      </div>
+    </section>
+    <div class="centerofpage">
+      <div class="section-1">
+        <div class="upo-section">
+          <div class="anamesa">
+            <img src="IMG.jpg" width="100px" />
+            <div>
+              <p>Πως να φτιαξετε ενα responsive grid με CSS Grid</p>
+              <p>12 Οκτωβριου 2025 * Κατηγορία:</p>
+            </div>
+          </div>
+          <p class="paragraph">
+            Συντομος οδηγος για να χρησειμοποιησετε CSS Grid σε συνδυασμο με
+            flexbox ωστε να τα χρησειμοποιησετε μαζι
+          </p>
+          <a href="#">Διαβαστε περισσοτερα</a>
+        </div>
+        <div class="upo-section">
+          <div class="anamesa">
+            <img src="IMG.jpg" width="100px" />
+            <div>
+              <p>Βελτιστοποιηση φορτωσης εικονων για performance</p>
+              <p>8 Οκτωβριου 2025 * Κατηγορία:</p>
+            </div>
+          </div>
+          <p class="paragraph">
+            Συμβουλες για lazy-loading, συχγρονες φορμες ωστε η σελιδες να
+            φορτωνουν γρηγορα σε κινητα
+          </p>
+          <a href="#">Διαβαστε περισσοτερα</a>
+        </div>
+        <div class="upo-section">
+          <div class="anamesa">
+            <img src="IMG.jpg" width="100px" />
+            <div>
+              <p>Καλες Πρακτικτες για την χρηση της JavaScript</p>
+              <p>28 Σεπτεμβριου 2025. JavaScript</p>
+            </div>
+          </div>
+          <p class="paragraph">
+            Μπειτε στο Udemy για να παρακολουθησετε δωρεαν μαθηματα course για
+            JavaScript !!!
+          </p>
+          <a href="#">Διαβαστε περισσοτερα</a>
+        </div>
+      </div>
+      <div class="dejia">
+        <p class="anazitisi">Αναζητηση</p>
+        <div>
+          <input placeholder="Αρχική" />
+          <article>
+            <p class="katigoria">Κατηγορίες</p>
+            <a href="#" class="css">CSS</a>
+            <a href="#" class="css">Perfomance</a>
+            <a href="#" class="css" style="margin-bottom: 20px">JavaScript</a>
+          </article>
+          <article class="prosfata-ar">
+            <p>Προσφατα Αρθρα</p>
+            <p>Πως να φτιαξετε ενα responsive με Grid CSS</p>
+            <p>Καλες πρακτικες για τη χρηση του JavaScript</p>
+            <a href="#" class="css">Διαβαστε περισσότερα</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
