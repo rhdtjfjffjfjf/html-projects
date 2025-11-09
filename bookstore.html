@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+        }
+        html{
+            width: 920px;
+            margin: 20px auto;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            
+        }
+        .div1{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            
+        }
+        input{
+            background-color: #f5f5f5;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 8px;
+            font-size: 16px;
+        }
+        input:focus{
+            outline: none;
+        }
+        .perigrafi{
+            margin-bottom: 20px;
+        }
+        .perigrafi h2{
+            margin-bottom: 12px;
+            font-size: 50px;
+            width: 40%;
+        }
+        .perigrafi p{
+            width: 40%;
+            margin-bottom: 12px;
+            color: #444;
+            line-height: 22px;
+        }
+        button{
+            background-color: #0e6fbe;
+            border: none;
+            color: #fff;
+            padding: 10px 25px;
+            border-radius: 12px;
+            cursor: pointer;
+            }
+        .books{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+           
+        }
+        .fea{
+            
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .english{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: flex-start; 
+        }
+        .book p:first-child{
+            margin-bottom: 8px;
+            font-weight: bold;
+
+            
+        }
+        .book p:nth-child(2){
+            color: #444;
+            margin-bottom: 8px;
+            
+        }
+        .book p:nth-child(3){
+            font-weight: bold;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .div-end{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            color: #444;
+            cursor: pointer;
+        }
+        .copyright{
+            color: #444;
+        }
+
+        
+
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Bookstore</h2>
+      <div class="div1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Genres</a>
+        <input placeholder="Search" />
+      </div>
+    </header>
+    <section class="perigrafi">
+      <h2>Discover your next great read</h2>
+      <p>
+        Lorem ipsum dolor sit amet, conscetur adipsing elit.Sed tempus nidh a
+        commado vinera.Donec vupulate mauris et ipsum elefehd, ut placerat orci
+        tristique.
+      </p>
+      <button>Shop Now</button>
+    </section>
+    <section class="section2" >
+      <p class="fea">Featured Books</p>
+      <div class="books">
+        <div class="english">
+          <img src="$_57.jpg" width="100px" height="100px" />
+          <div class="book">
+            <p>English Grammar</p>
+            <p>F.Scott fatzigewn</p>
+            <p>$10.99</p>
+          </div>
+        </div>
+        <div class="english">
+          <img src="616tX+OCwFL._AC_UF1000,1000_QL80_.jpg" width="100px" />
+          <div class="book">
+            <p>The Big Book Of English</p>
+            <p>Dave Modiflier</p>
+            <p>$8.99</p>
+          </div>
+        </div >
+        <div class="english">
+          <img src="013427525X.jpg" width="100px" />
+          <div class="book">
+            <p>Understanding And Using English</p>
+            <p>Bob S. Artur</p>
+            <p>$9.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <p class="copyright"> &#xa9 2025 Bookstore</p>
+        <div class="div-end">
+            <p>Private Policy</p>
+            <p>Terms of Service</p>
+            <p>Contact</p>
+        </div>
+    </footer>
+  </body>
+</html>
