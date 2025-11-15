@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel With us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+      }
+      html {
+        width: 750px;
+        margin: 20px auto;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .div1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .div1 p {
+        cursor: pointer;
+      }
+      .div1 input {
+        width: 17%;
+        text-align: center;
+        padding: 2px 0;
+        border: none;
+        background-color: #d8d5d5;
+        border-radius: 4px;
+      }
+      .div1 input:focus {
+        outline: none;
+      }
+      .div2 {
+        background-image: url("photo-1602002418816-5c0aeef426aa.jpg");
+        background-position: 10% 70%;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        padding: 90px 42px;
+        color: #fff;
+        margin-bottom: 20px;
+        border-radius: 7px;
+      }
+      .div2 p:first-child {
+        font-size: 50px;
+      }
+      .div2 p:nth-child(2) {
+        margin-bottom: 15px;
+        font-size: 27px;
+      }
+      .div2 button {
+        padding: 7px 30px;
+        color: #fff;
+        border: none;
+        background-color: #e8590c;
+        border-radius: 9px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .div-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+      }
+      .img {
+        border-radius: 12px;
+        margin-bottom: 16px;
+      }
+      .div3 {
+        display: flex;
+        font-weight: bold;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+      .div4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+      .p1 {
+        width: 160px;
+      }
+      .p2 {
+        width: 160px;
+      }
+      .p3 {
+        width: 200px;
+      }
+      .aa {
+        display: block;
+        text-decoration: none;
+        margin-top: 12px;
+      }
+      .mini-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+      .size {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .div5 {
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Travel</h1>
+      <div class="div1">
+        <p>Home</p>
+        <p>About</p>
+        <p>Destinations</p>
+        <p>Contact</p>
+        <input placeholder="Search" />
+      </div>
+    </header>
+    <section class="div2">
+      <p>Explore the World</p>
+      <p>Discover new places with us</p>
+      <button>Get Started</button>
+    </section>
+    <section class="div-img">
+      <img
+        src="istockphoto-1256296335-612x612.jpg"
+        alt="photo-beach"
+        width="200px"
+        class="img"
+      />
+      <img
+        src="istockphoto-475903022-612x612.jpg"
+        alt="summer-photo"
+        width="200px"
+        class="img"
+      />
+      <img
+        src="depositphotos_362631126-stock-photo-couple-sun-beds-tropical-beach.jpg"
+        alt="summer-vacation"
+        width="200px"
+        class="img"
+      />
+    </section>
+
+    <main>
+      <div class="div3">
+        <p>Popular Destinations</p>
+        <p>Book a Trip</p>
+      </div>
+
+      <div class="div4">
+        <p class="p1">
+          Explore Popular travel destination aroound the global earth
+          <a href="#" class="aa">Learn More</a>
+        </p>
+        <p class="p2">
+          Get to guides and advice from our experts
+          <a href="#" class="aa">Read Guides</a>
+        </p>
+        <p class="p3">
+          Plan and book your perfect trip with our help
+          <a href="#" class="aa">Book Now</a>
+        </p>
+      </div>
+    </main>
+    <section class="div5">
+      <p class="mini-title">Why Travel with Us</p>
+      <div class="size">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="brown"
+          class="size-5"
+          width="30px"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-5.5-2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM10 12a5.99 5.99 0 0 0-4.793 2.39A6.483 6.483 0 0 0 10 16.5a6.483 6.483 0 0 0 4.793-2.11A5.99 5.99 0 0 0 10 12Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div>
+          <strong>Experienced Guides</strong>
+          <p style="color: #444; margin-top: 3px">
+            Our guides are knwoledgeablele and passionate about travel
+          </p>
+        </div>
+      </div>
+      <div class="size">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="brown"
+          class="size-5"
+          width="30px"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div>
+          <strong>Amazing Destinations</strong>
+          <p style="color: #444; margin-top: 3px">
+            We offer a variety of unique and unforgattable travel experiences
+          </p>
+        </div>
+      </div>
+      <div class="size">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="brown"
+          class="size-5"
+          width="30px"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+
+        <div>
+          <strong>Customer Satisfaction</strong>
+          <p style="color: #444; margin-top: 3px">
+            We priotize Customer satistcaton and ensure a memorable trip
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
