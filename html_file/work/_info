@@ -1,0 +1,216 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/block2
+Ea2
+Z0 w1764095376
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 16
+Z3 dC:/Users/User/Downloads/.idea/hi/html_file
+Z4 8C:/Users/User/Downloads/.idea/hi/html_file/a2.vhd
+Z5 FC:/Users/User/Downloads/.idea/hi/html_file/a2.vhd
+l0
+L4 1
+VNz2kcAf7:EX9IdQ628;B03
+!s100 fH1LU7_[Y4CbK3?dEGL[;1
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1764095380
+!i10b 1
+Z8 !s108 1764095380.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/a2.vhd|
+Z10 !s107 C:/Users/User/Downloads/.idea/hi/html_file/a2.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Aa2a
+R1
+R2
+DEx4 work 2 a2 0 22 Nz2kcAf7:EX9IdQ628;B03
+!i122 16
+l16
+L15 11
+VS;k6BAzzm[Y1Xa=E9XmU61
+!s100 PNCegzjS[GYLRTDbEJ3YL2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ea2_b
+Z13 w1764092602
+R1
+R2
+!i122 12
+R3
+Z14 8C:/Users/User/Downloads/.idea/hi/html_file/a2_b.vhd
+Z15 FC:/Users/User/Downloads/.idea/hi/html_file/a2_b.vhd
+l0
+L4 1
+Vke4Zh_m]NfVfTV5id:A:E1
+!s100 XEE[jMzZMOX9nO]_@KAV[0
+R6
+32
+Z16 !s110 1764094934
+!i10b 1
+Z17 !s108 1764094934.000000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/a2_b.vhd|
+Z19 !s107 C:/Users/User/Downloads/.idea/hi/html_file/a2_b.vhd|
+!i113 1
+R11
+R12
+Aa2_b1
+R1
+R2
+DEx4 work 4 a2_b 0 22 ke4Zh_m]NfVfTV5id:A:E1
+!i122 12
+l28
+L7 33
+VKT^S?5jE5Hlo4T5<Rh4070
+!s100 M6HmVkD0:oG5E_L31hg2g3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Emy8bit
+Z20 w1764340992
+R1
+R2
+!i122 17
+R3
+Z21 8C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
+Z22 FC:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
+l0
+L4 1
+V4gPjKKhWX<l3J^RNQOS@X2
+!s100 G_5mDfUY;83Y]z2T@5cb10
+R6
+32
+Z23 !s110 1764341100
+!i10b 1
+Z24 !s108 1764341100.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+!s107 C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+!i113 1
+R11
+R12
+Amy8bita
+R1
+R2
+DEx4 work 6 my8bit 0 22 4gPjKKhWX<l3J^RNQOS@X2
+!i122 17
+l16
+L15 9
+VJ;g_fd]nZUB?BE0DQOl]C1
+!s100 @?09Y8T1]gL_bYK2ZAEZH3
+R6
+32
+R23
+!i10b 1
+R24
+R25
+Z26 !s107 C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+!i113 1
+R11
+R12
+Evhdl1
+Z27 w1763998429
+R1
+R2
+!i122 3
+R3
+Z28 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
+Z29 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
+l0
+L4 1
+V@:DEd1jl5]=0<`k;3jCEQ0
+!s100 [`oHHA:c3^]UTj;?a?gcS3
+R6
+32
+Z30 !s110 1763999565
+!i10b 1
+Z31 !s108 1763999564.000000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
+Z33 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
+!i113 1
+R11
+R12
+Amux1_8a
+R1
+R2
+DEx4 work 5 vhdl1 0 22 @:DEd1jl5]=0<`k;3jCEQ0
+!i122 3
+l13
+L12 15
+VokV24:OS^=^nR;7MXY>?@0
+!s100 nC4@HZ^VzoeDjaP:M3_I>3
+R6
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R11
+R12
+Evhdl1_tb
+Z34 w1763999505
+R1
+R2
+!i122 2
+R3
+Z35 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
+Z36 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
+l0
+L4 1
+Vdn;HgJh<?]h?e@bTzDiY20
+!s100 Jk`5=XST57DCcIaJOjk3]0
+R6
+32
+Z37 !s110 1763999564
+!i10b 1
+R31
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
+Z39 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
+!i113 1
+R11
+R12
+Avhdl1_tb1
+R1
+R2
+DEx4 work 8 vhdl1_tb 0 22 dn;HgJh<?]h?e@bTzDiY20
+!i122 2
+l22
+L7 22
+Vf7jRDnAoGTBShjARhcT072
+!s100 X^k^NoUoZINH;35OC4QOQ0
+R6
+32
+R37
+!i10b 1
+R31
+R38
+R39
+!i113 1
+R11
+R12

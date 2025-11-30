@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity a2_b is 
+end a2_b;
+
+Architecture a2_b1 of a2_b is
+
+component a2 is port
+(
+		A0: in std_logic_vector(7 downto 0);
+		A1: in std_logic_vector(7 downto 0);
+		A2: in std_logic_vector(7 downto 0);
+		A3: in std_logic_vector(7 downto 0);
+		Y : out std_logic_vector(7 downto 0);
+		sel: in std_logic_vector(1 downto 0)
+
+);
+end component ;
+
+signal A0: std_logic_vector(7 downto 0);
+signal A1: std_logic_vector(7 downto 0);
+signal A2: std_logic_vector(7 downto 0);
+signal A3: std_logic_vector(7 downto 0);
+signal sel: std_logic_vector(1 downto 0);
+signal Y: std_logic_vector(7 downto 0);
+
+Dut: a2 port map(A0, A1, A2, A3, Y, sel);
+
+Begin
+
+A0 <= "00000000", "00000001" after 50ps ;
+A1 <= "00000000", "00000100" after 100ps;
+A2 <= "01000000", "11000000" after 120ps;
+A3 <= "00000000", "00000110" after 150ps;
+sel <= "00", "01" after 150 ps , "10" after 190 ps, "11" after 300 ps;
+
+end a2_b1;
+

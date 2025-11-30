@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Training Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        width: 750px;
+        margin: 20px auto;
+        font-family: Roboto;
+        max-width: 750px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      header h2 {
+        font-size: 30px;
+      }
+      .header11 {
+        display: flex;
+        gap: 40px;
+      }
+      .mainclass {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+        justify-items: center;
+      }
+      .mainclass h1 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        width: 200px;
+      }
+      .mainclass p {
+        color: #444;
+        width: 300px;
+        line-height: 25px;
+      }
+      .mainclass button {
+        margin-top: 20px;
+        padding: 12px 32px;
+        color: #fff;
+        background-color: #d9480f;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      section p:first-child {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+      .div1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 22px;
+      }
+      .button-learn {
+        padding: 10px 20px;
+        color: #fff;
+        background-color: oklab(59.988% 0.15036 0.11691);
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      strong {
+        display: inline-block;
+        margin: 10px 0;
+      }
+      .lorem {
+        width: 80%;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Fitness</h2>
+      <div class="header11">
+        <p>Home</p>
+        <p>About</p>
+        <p>Services</p>
+        <p>Contact</p>
+      </div>
+    </header>
+    <main>
+      <div class="mainclass">
+        <div>
+          <h1>Start your Fitness journey</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectur adipsing elit. Ut elit tellus,
+            luctus nec ullamcoper mattis, pulvinar dapibus leo.
+          </p>
+          <button>Get Started</button>
+        </div>
+        <div>
+          <img
+            src="html_file/1000_F_237942164_Qr0uE93AOyxIM8dwtvENn6yoBB9ITijj.jpg"
+            width="320"
+            height="400px"
+          />
+        </div>
+      </div>
+    </main>
+    <section>
+      <p>Our Services</p>
+      <div class="div1">
+        <div>
+          <img
+            src="html_file/desktop-how-often-to-go-to-the-gym.jpg"
+            width="200"
+          />
+          <strong>Personal Training</strong>
+          <p class="lorem">Lorem ipsum dolor sit amet, consectur adipsing</p>
+        </div>
+        <div>
+          <img src="html_file/Gym-Equipment.jpg" width="200" />
+
+          <strong>Group Classes</strong>
+          <p class="lorem">Lorem ipsum dolor sit amet, consectur ar</p>
+        </div>
+        <div>
+          <img
+            src="html_file/perbedaan-gym-dan-fitness_3024x.webp"
+            width="300"
+          />
+          <strong>Nutrition Plans</strong>
+          <p class="lorem">Lorem ipsum dolor sit amet, consectur adipsing</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <button class="button-learn">Learn More</button>
+    </section>
+  </body>
+</html>
