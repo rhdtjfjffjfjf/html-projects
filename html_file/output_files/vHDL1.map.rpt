@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vHDL1
-Fri Nov 28 16:44:08 2025
+Mon Dec 01 15:09:34 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Nov 28 16:44:08 2025           ;
+; Analysis & Synthesis Status        ; Failed - Mon Dec 01 15:09:34 2025           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; vHDL1                                       ;
 ; Top-level Entity Name              ; vHDL1                                       ;
@@ -161,7 +161,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Nov 28 16:44:02 2025
+    Info: Processing started: Mon Dec 01 15:09:29 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vHDL1 -c vHDL1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -186,13 +186,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file my8bit.
 Info (12021): Found 2 design units, including 1 entities, in source file my9bita.vhd
     Info (12022): Found design unit 1: my9bit-my9bita File: C:/Users/User/Downloads/.idea/hi/html_file/my9bita.vhd Line: 7
     Info (12023): Found entity 1: my9bit File: C:/Users/User/Downloads/.idea/hi/html_file/my9bita.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file decoder24.bdf
+    Info (12023): Found entity 1: decoder24
+Info (12021): Found 2 design units, including 1 entities, in source file decoder.vhd
+    Info (12022): Found design unit 1: decoder-decoder83 File: C:/Users/User/Downloads/.idea/hi/html_file/decoder.vhd Line: 11
+    Info (12023): Found entity 1: decoder File: C:/Users/User/Downloads/.idea/hi/html_file/decoder.vhd Line: 4
 Error (10482): VHDL error at my9bita.vhd(24): object "sel" is used but not declared File: C:/Users/User/Downloads/.idea/hi/html_file/my9bita.vhd Line: 24
 Error (10346): VHDL error at my9bita.vhd(24): formal port or parameter "sel" must have actual or default value File: C:/Users/User/Downloads/.idea/hi/html_file/my9bita.vhd Line: 24
 Error (10784): HDL error at my9bita.vhd(15): see declaration for object "sel" File: C:/Users/User/Downloads/.idea/hi/html_file/my9bita.vhd Line: 15
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 1 warning
     Error: Peak virtual memory: 4776 megabytes
-    Error: Processing ended: Fri Nov 28 16:44:08 2025
-    Error: Elapsed time: 00:00:06
+    Error: Processing ended: Mon Dec 01 15:09:34 2025
+    Error: Elapsed time: 00:00:05
     Error: Total CPU time (on all processors): 00:00:13
 
 

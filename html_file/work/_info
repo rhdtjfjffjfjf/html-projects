@@ -91,25 +91,189 @@ R19
 !i113 1
 R11
 R12
+Ecoder
+Z20 w1764674323
+R1
+R2
+!i122 38
+R3
+Z21 8C:\Users\User\Downloads\.idea\hi\html_file\coder.vhd
+Z22 FC:\Users\User\Downloads\.idea\hi\html_file\coder.vhd
+l0
+L4 1
+Vm]YOVD?zFB3:[Y<[J>VK33
+!s100 eGjB>0gWHZK8_Q<`KdZ8U0
+R6
+32
+Z23 !s110 1764674997
+!i10b 1
+Z24 !s108 1764674997.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\User\Downloads\.idea\hi\html_file\coder.vhd|
+Z26 !s107 C:\Users\User\Downloads\.idea\hi\html_file\coder.vhd|
+!i113 1
+R11
+R12
+Acoder1
+R1
+R2
+Z27 DEx4 work 5 coder 0 22 m]YOVD?zFB3:[Y<[J>VK33
+!i122 38
+l13
+Z28 L11 10
+Z29 VZR7V6O?VZPW3ZQXHFl[261
+Z30 !s100 T>D^G3=E_LN3;XUJOTHz61
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ecoder_tb
+Z31 w1764674953
+R1
+R2
+!i122 37
+R3
+Z32 8C:/Users/User/Downloads/.idea/hi/html_file/coder_tb.vhd
+Z33 FC:/Users/User/Downloads/.idea/hi/html_file/coder_tb.vhd
+l0
+L4 1
+VkTYSnnRMPN2:53Z@CO0CM2
+!s100 f]G0_:24k8NnmhaRfKE:B2
+R6
+32
+R23
+!i10b 1
+R24
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/coder_tb.vhd|
+Z35 !s107 C:/Users/User/Downloads/.idea/hi/html_file/coder_tb.vhd|
+!i113 1
+R11
+R12
+Acoder_tb1
+R1
+R2
+DEx4 work 8 coder_tb 0 22 kTYSnnRMPN2:53Z@CO0CM2
+!i122 37
+l19
+L7 19
+Vk2T^5dBOS=L>li;_lUC]?0
+!s100 _0hO:hObT@A;d0279d_=^3
+R6
+32
+R23
+!i10b 1
+R24
+R34
+R35
+!i113 1
+R11
+R12
+Edecoder
+Z36 w1764601697
+R1
+R2
+!i122 34
+R3
+Z37 8C:\Users\User\Downloads\.idea\hi\html_file\decoder.vhd
+Z38 FC:\Users\User\Downloads\.idea\hi\html_file\decoder.vhd
+l0
+L4 1
+VB`Pz[DaJWM2F^>mF0c[@Y1
+!s100 :Nm4[LE[S5bNO_5Z]X<C_0
+R6
+32
+Z39 !s110 1764621075
+!i10b 1
+Z40 !s108 1764621075.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\User\Downloads\.idea\hi\html_file\decoder.vhd|
+Z42 !s107 C:\Users\User\Downloads\.idea\hi\html_file\decoder.vhd|
+!i113 1
+R11
+R12
+Adecoder83
+R1
+R2
+DEx4 work 7 decoder 0 22 B`Pz[DaJWM2F^>mF0c[@Y1
+!i122 34
+l13
+L11 17
+VXGHRam^E<iCFMQEePVROJ1
+!s100 a1dPHJD>hZ0;17f_ReogF1
+R6
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R11
+R12
+Edecoder_tb
+Z43 w1764621066
+R1
+R2
+!i122 33
+R3
+Z44 8C:\Users\User\Downloads\.idea\hi\html_file\decoder_tb.vhd
+Z45 FC:\Users\User\Downloads\.idea\hi\html_file\decoder_tb.vhd
+l0
+L4 1
+VO_lObi>N[mIh07NSNCBXe0
+!s100 ]5JIN4b^N:I74HXlKUBA`0
+R6
+32
+R39
+!i10b 1
+R40
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\User\Downloads\.idea\hi\html_file\decoder_tb.vhd|
+Z47 !s107 C:\Users\User\Downloads\.idea\hi\html_file\decoder_tb.vhd|
+!i113 1
+R11
+R12
+Adecoder_tb1
+R1
+R2
+DEx4 work 10 decoder_tb 0 22 O_lObi>N[mIh07NSNCBXe0
+!i122 33
+l20
+L8 19
+Vz7EMZ[Kf]XD;6^DIQ;nNd2
+!s100 cATHAP5EDDK@UJLEM^S[]0
+R6
+32
+R39
+!i10b 1
+R40
+R46
+R47
+!i113 1
+R11
+R12
 Emy8bit
-Z20 w1764340992
+Z48 w1764340992
 R1
 R2
 !i122 17
 R3
-Z21 8C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
-Z22 FC:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
+Z49 8C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
+Z50 FC:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd
 l0
 L4 1
 V4gPjKKhWX<l3J^RNQOS@X2
 !s100 G_5mDfUY;83Y]z2T@5cb10
 R6
 32
-Z23 !s110 1764341100
+Z51 !s110 1764341100
 !i10b 1
-Z24 !s108 1764341100.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
-!s107 C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+Z52 !s108 1764341100.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+Z54 !s107 C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
 !i113 1
 R11
 R12
@@ -124,33 +288,33 @@ VJ;g_fd]nZUB?BE0DQOl]C1
 !s100 @?09Y8T1]gL_bYK2ZAEZH3
 R6
 32
-R23
+R51
 !i10b 1
-R24
-R25
-Z26 !s107 C:/Users/User/Downloads/.idea/hi/html_file/my8bit.vhd|
+R52
+R53
+R54
 !i113 1
 R11
 R12
 Evhdl1
-Z27 w1763998429
+Z55 w1763998429
 R1
 R2
 !i122 3
 R3
-Z28 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
-Z29 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
+Z56 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
+Z57 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd
 l0
 L4 1
 V@:DEd1jl5]=0<`k;3jCEQ0
 !s100 [`oHHA:c3^]UTj;?a?gcS3
 R6
 32
-Z30 !s110 1763999565
+Z58 !s110 1763999565
 !i10b 1
-Z31 !s108 1763999564.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
-Z33 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
+Z59 !s108 1763999564.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
+Z61 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1.vhd|
 !i113 1
 R11
 R12
@@ -165,33 +329,33 @@ VokV24:OS^=^nR;7MXY>?@0
 !s100 nC4@HZ^VzoeDjaP:M3_I>3
 R6
 32
-R30
+R58
 !i10b 1
-R31
-R32
-R33
+R59
+R60
+R61
 !i113 1
 R11
 R12
 Evhdl1_tb
-Z34 w1763999505
+Z62 w1763999505
 R1
 R2
 !i122 2
 R3
-Z35 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
-Z36 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
+Z63 8C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
+Z64 FC:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd
 l0
 L4 1
 Vdn;HgJh<?]h?e@bTzDiY20
 !s100 Jk`5=XST57DCcIaJOjk3]0
 R6
 32
-Z37 !s110 1763999564
+Z65 !s110 1763999564
 !i10b 1
-R31
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
-Z39 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
+R59
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
+Z67 !s107 C:/Users/User/Downloads/.idea/hi/html_file/vHDL1_TB.vhd|
 !i113 1
 R11
 R12
@@ -206,11 +370,11 @@ Vf7jRDnAoGTBShjARhcT072
 !s100 X^k^NoUoZINH;35OC4QOQ0
 R6
 32
-R37
+R65
 !i10b 1
-R31
-R38
-R39
+R59
+R66
+R67
 !i113 1
 R11
 R12
