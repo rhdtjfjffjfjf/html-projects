@@ -1,0 +1,90 @@
+|Block333
+Y0 <= B0.DB_MAX_OUTPUT_PORT_TYPE
+B0 => Y0.DATAIN
+B0 => inst2.IN0
+B0 => mux2x1:inst1.D1
+B0 => mux2x1:inst.D0
+B0 => HA:inst4.A
+Y1 <= mux2x1:inst1.Y
+B1 => mux2x1:inst1.A
+B1 => mux2x1:inst.A
+B1 => Y3.DATAIN
+B1 => FA:inst7.B
+Y2 <= mux2x1:inst.Y
+Y3 <= B1.DB_MAX_OUTPUT_PORT_TYPE
+X3 <= FA:inst7.S
+A3 => FA:inst7.A
+A2 => FA:inst6.A
+A1 => FA:inst5.B
+A0 => HA:inst4.B
+X4 <= FA:inst7.Co
+X2 <= FA:inst6.S
+X1 <= FA:inst5.S
+X0 <= HA:inst4.S
+
+
+|Block333|mux2x1:inst1
+D0 => Y.DATAB
+D1 => Y.DATAA
+A => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block333|mux2x1:inst
+D0 => Y.DATAB
+D1 => Y.DATAA
+A => Y.OUTPUTSELECT
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block333|FA:inst7
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block333|FA:inst6
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block333|FA:inst5
+A => S.IN0
+A => Co.IN0
+A => Co.IN0
+B => S.IN1
+B => Co.IN1
+B => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block333|HA:inst4
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

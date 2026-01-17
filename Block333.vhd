@@ -1,0 +1,141 @@
+-- Copyright (C) 2020  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- PROGRAM		"Quartus Prime"
+-- VERSION		"Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+-- CREATED		"Sat Jan 10 19:02:47 2026"
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+
+ENTITY Block333 IS 
+	PORT
+	(
+		B1 :  IN  STD_LOGIC;
+		B0 :  IN  STD_LOGIC;
+		A0 :  IN  STD_LOGIC;
+		A1 :  IN  STD_LOGIC;
+		A2 :  IN  STD_LOGIC;
+		A3 :  IN  STD_LOGIC;
+		Y0 :  OUT  STD_LOGIC;
+		Y1 :  OUT  STD_LOGIC;
+		Y2 :  OUT  STD_LOGIC;
+		Y3 :  OUT  STD_LOGIC;
+		X3 :  OUT  STD_LOGIC;
+		X4 :  OUT  STD_LOGIC;
+		X2 :  OUT  STD_LOGIC;
+		X1 :  OUT  STD_LOGIC;
+		X0 :  OUT  STD_LOGIC
+	);
+END Block333;
+
+ARCHITECTURE bdf_type OF Block333 IS 
+
+COMPONENT mux2x1
+	PORT(D0 : IN STD_LOGIC;
+		 D1 : IN STD_LOGIC;
+		 A : IN STD_LOGIC;
+		 Y : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT ha
+	PORT(A : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 S : OUT STD_LOGIC;
+		 C : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+COMPONENT fa
+	PORT(A : IN STD_LOGIC;
+		 B : IN STD_LOGIC;
+		 Ci : IN STD_LOGIC;
+		 S : OUT STD_LOGIC;
+		 Co : OUT STD_LOGIC
+	);
+END COMPONENT;
+
+SIGNAL	SYNTHESIZED_WIRE_0 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_1 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_2 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_3 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_4 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_5 :  STD_LOGIC;
+SIGNAL	SYNTHESIZED_WIRE_6 :  STD_LOGIC;
+
+
+BEGIN 
+Y0 <= B0;
+Y3 <= B1;
+Y1 <= SYNTHESIZED_WIRE_2;
+Y2 <= SYNTHESIZED_WIRE_4;
+SYNTHESIZED_WIRE_0 <= '0';
+
+
+
+b2v_inst : mux2x1
+PORT MAP(D0 => B0,
+		 D1 => SYNTHESIZED_WIRE_0,
+		 A => B1,
+		 Y => SYNTHESIZED_WIRE_4);
+
+
+b2v_inst1 : mux2x1
+PORT MAP(D0 => SYNTHESIZED_WIRE_1,
+		 D1 => B0,
+		 A => B1,
+		 Y => SYNTHESIZED_WIRE_2);
+
+
+SYNTHESIZED_WIRE_1 <= NOT(B0);
+
+
+
+
+b2v_inst4 : ha
+PORT MAP(A => B0,
+		 B => A0,
+		 S => X0,
+		 C => SYNTHESIZED_WIRE_3);
+
+
+b2v_inst5 : fa
+PORT MAP(A => SYNTHESIZED_WIRE_2,
+		 B => A1,
+		 Ci => SYNTHESIZED_WIRE_3,
+		 S => X1,
+		 Co => SYNTHESIZED_WIRE_5);
+
+
+b2v_inst6 : fa
+PORT MAP(A => A2,
+		 B => SYNTHESIZED_WIRE_4,
+		 Ci => SYNTHESIZED_WIRE_5,
+		 S => X2,
+		 Co => SYNTHESIZED_WIRE_6);
+
+
+b2v_inst7 : fa
+PORT MAP(A => A3,
+		 B => B1,
+		 Ci => SYNTHESIZED_WIRE_6,
+		 S => X3,
+		 Co => X4);
+
+
+END bdf_type;

@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity HA is port
+(
+	A, B: in std_logic;
+	s, C: out std_logic
+);
+end HA;
+
+Architecture HA_1 of HA is
+
+Begin
+
+S <= A xor B;
+C <= A and B;
+
+end HA_1;

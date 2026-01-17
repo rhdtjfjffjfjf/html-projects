@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity mux_tb is
+end mux_tb;
+
+Architecture mux_tb1 of muc_tb is
+
+component mux41 is port(
+
+   A: in std_logic;
+	B: in std_logic;
+	C: in std_logic;
+	F: out std_logic
+	);
+end component;
+
+signal A1: std_logic;
+signal B1: std_logic;
+signal C1: std_logic;
+signal F1: std_logic;
+
+Begin
+
+DUT: port map(A => A1, B => B1, C => C1, F => F1);
+
+A1 <= '0', '0' after 50 ps, '1' after 100 ps;
+B1 <= '0', '1' after 50 ps, '0' after 100 ps;
+
+end mux_tb1;

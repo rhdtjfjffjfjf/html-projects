@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portofolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html {
+        width: 820px;
+        margin: 12px auto;
+      }
+      header {
+        background-color: #1c7ed6;
+      }
+      .head {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 12px;
+        align-items: center;
+        gap: 15px;
+      }
+      h3 {
+        color: #fff;
+      }
+      .head p {
+        color: #fff;
+      }
+      .get {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        color: #1c7ed6;
+      }
+      .section1 {
+        display: flex;
+        align-items: center;
+        gap: 177px;
+        background-position: 50% 40%;
+        padding: 100px 12px;
+        border-bottom: 1px solid;
+      }
+      .icon {
+        border-radius: 80%;
+      }
+      .hi {
+        font-weight: bold;
+        font-size: 23px;
+        width: 260px;
+        line-height: 30px;
+        margin-bottom: 20px;
+      }
+      .create {
+        color: #444;
+        width: 300px;
+        line-height: 22px;
+      }
+      .see {
+        margin-top: 20px;
+        padding: 10px 9px;
+        background-color: #1c7ed6;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      .section2 {
+        display: flex;
+        background-color: #fff;
+        padding: 30px;
+        align-items: flex-start;
+        border-bottom: 1px solid #444;
+      }
+
+      .mini-section p:first-child {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .mini-section p:nth-child(2) {
+        color: #444;
+        margin-bottom: 12px;
+      }
+      .mini-section p:nth-child(3) {
+        color: #444;
+        margin-bottom: 12px;
+        width: 70%;
+      }
+      .see1 {
+        padding: 10px 5px;
+        color: #fff;
+        background-color: #1c7ed6;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .mini-section1 {
+        background-color: #d3d7da;
+        border-radius: 12px;
+      }
+      .mini-section1-1 {
+        margin-top: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0 12px;
+      }
+      .max strong {
+        display: inline-block;
+        margin-bottom: 4px;
+      }
+      .max p {
+        color: #444;
+        width: 80%;
+        margin-bottom: 12px;
+      }
+      .workstasion {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .section3 {
+        background-color: #ebeef1;
+      }
+      .section3 p:first-child {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .section3 p:nth-child(2) {
+        text-align: center;
+        margin-top: 18px;
+        color: #444;
+        font-size: 19px;
+      }
+      .projects {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 12px;
+        border-bottom: 1px solid #444;
+      }
+
+      .project1 {
+        background-color: #fff;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .project1 img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .project1 a {
+        display: block;
+        margin-top: 8px;
+        padding: 0 8px;
+        text-decoration: none;
+        color: #1c7ed6;
+        font-size: 18px;
+        border-bottom: 1px solid #444;
+      }
+      .project1 p {
+        padding: 0 8px;
+        margin-top: 7px;
+        color: #444;
+        margin-bottom: 10px;
+      }
+      .see2 {
+        margin-bottom: 12px;
+        margin-left: 12px;
+        padding: 5px 12px;
+        color: #fff;
+        background-color: #1c7ed6;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .end {
+        display: flex;
+      }
+      .end1 {
+        padding: 20px 0;
+        margin-left: 20px;
+      }
+      .end1 p:first-child {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .end1 p:nth-child(2) {
+        color: #444;
+        width: 70%;
+        margin-bottom: 7px;
+      }
+      .name {
+        padding: 6px 12px;
+        color: #444;
+      }
+      .email {
+        padding: 6px 12px;
+      }
+      .text {
+        display: block;
+        margin-top: 3px;
+        width: 76%;
+        height: 100px;
+        padding-bottom: 77px;
+        padding-left: 12px;
+        max-width: 76%;
+      }
+      .end1 button {
+        margin-top: 2px;
+        padding: 7px 27px;
+        color: #fff;
+        background-color: #1c7ed6;
+        cursor: pointer;
+        border: none;
+        border-radius: 3px;
+      }
+      .end1 button:focus {
+        outline: none;
+      }
+      .end1-1 {
+        
+        
+        padding: 20px 0;
+        margin-top: 70px;
+        
+      }
+      .size-8 {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .size-7 {
+        background-color: #1c7ed6;
+        fill: #fff;
+        border-radius: 3px;
+      }
+      .size-9 strong {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+      .size-9 p {
+        color: #444;
+        margin-bottom: 10px;
+      }
+      .size-1{
+        display: flex;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .size-1 p{
+        color: #444;
+      }
+      .size-6-6{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .size-6{
+        background-color: #1c7ed6;
+        color: #fff;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+      .size{
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <h3>My Portofolio</h3>
+        <div class="head">
+          <p>Σχετικα</p>
+          <p>Projects</p>
+          <p>Εποικοινωνια</p>
+        </div>
+        <button class="get">Get in Touch</button>
+      </div>
+    </header>
+    <section class="section1">
+      <div><img src=html_file/ISIB5497.JPG class="icon" width="270" /></div>
+      <div>
+        <p class="hi">Γεία! Ειμαι ο Αλέξης, Web Developer</p>
+        <p class="create">
+          Δημιουργεια websites με την χρηση προγραματιστικων λειτουργιων HTML,
+          CSS, JavaScript
+        </p>
+        <button class="see">Δειτε τα Projects μου</button>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="mini-section">
+        <p>Σχετικα με μενα</p>
+        <p>Μαθε περισσοτερα για τις δεξιοτητες μου</p>
+        <p>
+          Γεια! Ειμαι ενας web developer για την δημιουργια ομορφων και
+          λειτουργικων websites Χαρακτηριστικα που συγχρονιζουν τεχνολογιες με
+          HTML, CSS, JavaScript.
+        </p>
+        <button class="see1">Δειτε το Βιογραφικο μου</button>
+      </div>
+      <div class="border">
+        <div class="mini-section1">
+          <img
+            src="html_file/lenovo-worksations-industries-media-lifestyle.webp"
+            width="300"
+            class="workstasion"
+          />
+          <div class="mini-section1-1">
+            <input type="checkbox" checked />
+            <div class="max">
+              <strong>Web Developer</strong>
+              <p>Σχεδιαση και ομορφια στις εφαρμογες</p>
+            </div>
+          </div>
+          <div class="mini-section1-1">
+            <input type="checkbox" checked />
+            <div class="max">
+              <strong>Συνεχης Μαθηση</strong>
+              <p>
+                Επικεντρωνομαστε στην σωστη μαθηση και αναπτυσουμε τις
+                δεξιοτητες μας.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <p>Τα Projects μου</p>
+      <p>Kαποια απο τα εργα μου!</p>
+      <div class="projects">
+        <div class="project1">
+          <img src="html_file/img-deliver-maximum@2x.jpg.webp" width="210" />
+          <a href="#">Website 1</a>
+          <p>Περιγραφη project 1</p>
+          <button class="see2">Δειτε Περισσοτερα</button>
+        </div>
+        <div class="project1">
+          <img
+            src="html_file/0_E4wUJdyy9LFru3Gx.jpg"
+            width="210"
+            height="142.1"
+          />
+          <a href="#">Website 2</a>
+          <p>Περιγραφη project 2</p>
+          <button class="see2">Δειτε Περισσοτερα</button>
+        </div>
+        <div class="project1">
+          <img
+            src="html_file/architecture-plan-blueprint-layout-work-concept_53876-124260.avif"
+            width="210"
+            height="142.1"
+          />
+          <a href="#">Website 3</a>
+          <p>Περιγραφη project 3</p>
+          <button class="see2">Δειτε Περισσοτερα</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="end">
+        <div class="end1">
+          <p>Εποικοινωνια</p>
+          <p>
+            Μπορεις να εποκοινωνισεις μαζι μου συμπληρωνοντας τα στοιχεια σου
+          </p>
+          <input type="text" placeholder="Ονομα" class="name" />
+          <input type="email" placeholder="Email" class="email" />
+          <input type="text" placeholder="Μηνυμα" class="text" />
+          <button>Αποστολή</button>
+        </div>
+        <div class="size">
+        <div class="end1-1">
+          <div class="size-8">
+            
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7"
+              width="20"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z"
+              />
+            </svg>
+            <div class="size-9">
+              <strong>Email</strong>
+              <p>alexasimak06@gmail.com</p>
+            </div>
+          </div>
+          <div class="size-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-7"
+              width="20"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              />
+            </svg>
+            <p>+30 6976441111</p>
+          </div>
+              <div class="size-6-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="30"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="30"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 7.5-2.25-1.313M21 7.5v2.25m0-2.25-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3 2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75 2.25-1.313M12 21.75V19.5m0 2.25-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                  width="30"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"
+                  />
+                </svg>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

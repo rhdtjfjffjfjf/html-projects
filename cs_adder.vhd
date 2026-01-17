@@ -1,0 +1,61 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity cs_adder is port
+(
+	a,b: in std_logic_vector(7 downto 0);
+	cin: in std_logic;
+	s: out std_logic_vector(7 downto 0);
+	cout: out std_logic
+);
+
+end cs_adder;
+
+Architecture cs_adder_1 of cs_adder is
+
+signal p, g: std_logic_vector(7 downto 0);
+signal bp: std_logic;
+signal c: std_logic_vector(8 downto 0);
+
+component fa_tonos is port
+(
+	p,g,cin : in std_logic;
+	s, cout: out std_logic
+);
+end component;
+
+component mux2to1 is port
+(
+	a,b : in std_logic;
+	sel : in std_logic;
+	mux_out: out std_logic
+);
+end component;
+
+Begin
+
+p1: for i in 0 to 7 generate
+p(i) <= a(i) xor b(i);
+g(i) <= a(i) and b(i);
+end generate;
+
+
+c(0) <= cin;
+fast_cain: for j in 0 to 7 generate
+fa_8: fa_tonos port map(p => p(j), g=> g(j), cin => c(j), s => s(j), cout => c(j+1));
+end generate;
+
+
+bp <= p(0) and p(1) and p(2) and p(3) and p(4) and p(5) and p(6) and p(7);
+
+blox_mux: mux2to1 port map(a => c(8), b => cin, sel => bp, mux_out => cout);
+
+end cs_adder_1;
+
+
+
+
+
+
+
+

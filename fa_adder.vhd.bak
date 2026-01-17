@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity fa_adder is port
+(
+	a, b, cin: in std_logic;
+	s, c: out std_logic
+	);
+end fa_adder;
+
+Architecture fa_adder1 of fa_adder is
+
+Component ha_adder is port
+(
+	a, b: in std_logic;
+	s, c: out std_logic
+);
+
+end component;
+
+signal w1, w2, w3: std_logic;
+
+Begin
+
+HA1: ha_adder port map( a => a, b => b, s => w1, c => w2);
+HA2: ha_adder port map( a => w1, b => cin, s => s, c => w3);
+c <= w3 or w2;
+
+end fa_adder1;

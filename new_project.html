@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portofolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        max-width: 830px;
+        width: 820px;
+        margin: 12px auto;
+      }
+      .first {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+      }
+      
+      h2 {
+        color: darkblue;
+      }
+      a{
+       
+        text-decoration: none;
+        position: relative;
+        display: block;
+        
+      }
+      a::after{
+        position: absolute;
+        content: "";
+        bottom: -9px;
+        
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #e57185;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      a:hover::after{
+        opacity: 1;
+        
+      }
+      .sec {
+        
+        display: flex;
+        gap: 22px;
+        cursor: pointer;
+        color: darkblue;
+        
+      }
+      .third {
+        margin-top: 40px;
+        color: darkblue;
+        background-image: url("depositphotos_362631126-stock-photo-couple-sun-beds-tropical-beach.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: lefts;
+        padding: 40px;
+      }
+      .welcome1 {
+        font-size: 30px;
+      }
+
+      .welcome {
+        font-size: 30px;
+      }
+      strong {
+        color: #e57185;
+      }
+      hr {
+        margin: 10px 0;
+        border-bottom: 0.3px solid #444;
+        width: 50%;
+      }
+      .view {
+        margin-top: 100px;
+        padding: 11px 32px;
+        background-color: #e57185;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      .about {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: darkblue;
+        font-size: 20px;
+        position: relative;
+      }
+      .about::before,
+      .about::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 350px;
+        height: 2px;
+        background-color: #ccc;
+      }
+      .about::before {
+        left: 0px;
+      }
+      .about::after {
+        right: 0;
+      }
+      .fourth {
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+
+        justify-content: space-evenly;
+        
+      }
+      .web {
+        width: 60%;
+        color: #444;
+      }
+      .love {
+        margin-top: 10px;
+        color: #444;
+      }
+      .project {
+        text-align: center;
+        font-size: 20px;
+        color: darkblue;
+        position: relative;
+      }
+      .project::after,
+      .project::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        width: 350px;
+        height: 2px;
+        background-color: #ccc;
+      }
+      .project::after {
+        right: 0;
+      }
+      .project::before {
+        left: 0;
+      }
+      .grid3tem {
+        margin-top: 16px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .project1 {
+        background-color: rgb(10, 10, 155);
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px
+      }
+      .project1 p {
+        margin-top: 7px;
+        text-align: center;
+        color: #fff;
+      }
+      .project1 button {
+        margin-top: 12px;
+        padding: 5px 15px;
+        color: #fff;
+        background-color: #e57185;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .contact{
+        text-align: center;
+        font-size: 20px;
+        color: darkblue;
+        margin-top: 18px;
+        position: relative;
+      }
+      .contact::after, .contact::before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        width: 350px;
+        height: 2px;
+        background-color: #ccc;
+      }
+      .contact::after{
+        left: 0;
+
+      }
+      .contact::before{
+        right: 0;
+      }
+      .size-6{
+        fill: darkblue;
+        
+      }
+      .info{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        margin-top: 20px;
+
+        
+      }
+      .mails{
+        display:flex;
+        align-items: center;
+        gap: 12px;
+
+      }
+      .mails p{
+        color: darkblue;
+      }
+      .send{
+        text-align: center;
+        }
+      .send button{
+        padding: 8px 20px;
+        margin-top: 20px;
+        color: #fff;
+        background-color: #e57185;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      footer p{
+        text-align: center;
+        margin-top: 50px;
+        color: darkblue;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="first">
+        <h2>Maria Papadopoulou</h2>
+        <div class="sec">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+    <section class="third">
+      <h1 class="welcome1">Welcome!</h1>
+      <h1 class="welcome">I'm Maria, a <strong> Web Developer</strong></h1>
+      <hr />
+      <p>I create modern and responsive websites</p>
+      <button class="view">View My Work</button>
+    </section>
+    <section>
+      <p class="about">About Me</p>
+      <div class="fourth">
+        <div>
+          <p class="web">
+            I am passionate web developer with experience in creating dynamic
+            and user-friendly websites.
+          </p>
+          <p class="love">I love coding and building awesome projects</p>
+        </div>
+        <img src="Screenshot 2026-01-16 180324.png" />
+      </div>
+    </section>
+    <section>
+      <p class="project">My Projects</p>
+      <div class="grid3tem">
+        <div class="project1">
+          <img src="Screenshot 2026-01-16 181257.png" width="170px" />
+          <p>Portofolio Website</p>
+          <button>View Project</button>
+        </div>
+        <div class="project1">
+          <img src="Screenshot 2026-01-16 182341.png" width="170px" />
+          <p>E-Commerence Site</p>
+          <button>View Project</button>
+        </div>
+        <div class="project1"">
+          <img src="Screenshot 2026-01-16 183455.png" width="170px" />
+          <p>Blog Platform</p>
+          <button>View Platform</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p class="contact">Contact Me</p>
+      <div class="info">
+        <div class="mails">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" width="20">
+            <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
+            <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
+            </svg>
+
+          <p class="mail">Email: maria@example.com</p>
+        </div>
+        <div class="mails">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" width="20">
+            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+            </svg>
+
+          <p>+123 456 7890</p>
+        </div>
+        
+
+        <div class="mails">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6" width="20">
+        <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+        </svg>
+          <p>Location: Athens, Greece</p>
+        </div>
+      </div>
+      <div class="send">
+      <button >Send Message</button>
+      </div>
+    </section>
+    <footer>
+      <p>&#169; Maria Papadopoulou. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

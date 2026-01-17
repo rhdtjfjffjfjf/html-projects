@@ -1,37 +1,18 @@
-# Compile of coder_tb.vhd was successful.
-# Compile of coder.vhd was successful.
+# Compile of cascade_comp_1bit.vhd was successful.
+# Compile of comp_1bit.vhd was successful.
 # 2 compiles, 0 failed with no errors.
-vsim -gui work.coder_tb
-# vsim -gui work.coder_tb 
-# Start time: 13:30:07 on Dec 02,2025
+vsim -gui work.cascade_comp_1bit
+# vsim -gui work.cascade_comp_1bit 
+# Start time: 17:01:58 on Jan 11,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.coder_tb(coder_tb1)
-# Loading work.coder(coder1)
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run
-# GetModuleFileName: Δεν ήταν δυνατό να εντοπιστεί η καθορισμένη λειτ. μονάδα.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
+# Loading work.cascade_comp_1bit(bdf_type)
+# Loading work.comp_1bit(bdf_type)
+# A bookmarks file was found in the current directory with 1 bookmark
+env ..
+# sim:/cascade_comp_1bit
+env ..
+# sim:/cascade_comp_1bit
+# End time: 17:32:19 on Jan 11,2026, Elapsed time: 0:30:21
+# Errors: 0, Warnings: 5

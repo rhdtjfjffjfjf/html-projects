@@ -1,0 +1,17 @@
+C:/Users/User/Downloads/.idea/hi/test_bvhd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/.idea/hi/test_bvhd.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test_b
+-- Compiling architecture test_b1 of test_b
+
+} {} {}} C:/Users/User/Downloads/.idea/hi/ha_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Downloads/.idea/hi/ha_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ha_adder
+-- Compiling architecture ha_adder1 of ha_adder
+
+} {} {}}

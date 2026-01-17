@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity FA' is port
+(
+	P, G, Cin : in std_logic;
+	S, Cout : out std_logic
+);
+
+end FA';
+
+Architecture FA'_1 of FA' is
+
+signal x1: std_logic;
+
+Begin
+
+x1 <= P and Cin ;
+S <= P xor Cin ;
+Cout <= x1 or G ;
+
+end FA'_1;
+

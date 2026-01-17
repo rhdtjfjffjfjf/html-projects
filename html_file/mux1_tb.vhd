@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+Entity mux1_tb is
+end mux1_tb;
+
+Architecture muxtb_tb of mux1_tb is
+
+Component mux8x1 is port
+(
+	a: in std_logic_vector(7 downto 0);
+	s: in std_logic_vector(2 downto 0);
+	f: out std_logic
+);
+
+end component;
+
+signal a:  std_logic_vector(7 downto 0);
+signal s:  std_logic_vector(2 downto 0);
+signal f:  std_logic;
+
+Begin
+
+DUT: mux8x1 port map(a => a,s => s,f => f);
+
+-- a inputs
+a(0) <= '1', '0' after 50 ps;
+a(1) <= '0', '1' after 50 ps , '0' after 80 ps;
+a(2) <= '0', '1' after 100 ps , '0' after 130 ps;
+a(3) <= '0', '1' after 150 ps , '0' after 200 ps;
+a(4) <= '0', '1' after 250 ps , '0' after 290 ps;
+a(5) <= '0', '1' after 280 ps , '0' after 310 ps;
+a(6) <= '0', '1' after 350 ps , '0' after 380 ps;
+a(7) <= '0', '1' after 410 ps , '0' after 430 ps;
+
+-- s selectors
+s <= "000", "001" after 50 ps, "010" after 150 ps, "100" after 200 ps, "101" after 200 ps, "110" after 260 ps, "111" after 310 ps;
+end muxtb_tb;
+

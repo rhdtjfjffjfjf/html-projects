@@ -1,0 +1,330 @@
+I/O Assignment Analysis report for fpga
+Sat Dec 13 16:20:24 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. I/O Assignment Analysis Summary
+  3. Parallel Compilation
+  4. Fitter Messages
+  5. Ignored Assignments
+  6. Pin-Out File
+  7. All Package Pins
+  8. I/O Bank Usage
+  9. I/O Assignment Analysis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------------------------------------------+
+; I/O Assignment Analysis Summary                                              ;
++--------------------------------+---------------------------------------------+
+; I/O Assignment Analysis Status ; Successful - Sat Dec 13 16:20:24 2025       ;
+; Quartus Prime Version          ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                  ; fpga                                        ;
+; Top-level Entity Name          ; fpga                                        ;
+; Family                         ; Cyclone IV E                                ;
+; Device                         ; EP4CE6E22C8                                 ;
+; Timing Models                  ; Final                                       ;
+; Total pins                     ; 0 / 92 ( 0 % )                              ;
+; Total virtual pins             ; 0                                           ;
+; Total PLLs                     ; 0 / 2 ( 0 % )                               ;
++--------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (11747): Analysis and Synthesis (quartus_map) with top-level entity name "fpga" was not run before running I/O Assignment Analysis -- I/O Assignment Analysis will check only I/O assignments on the reserved pins
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (119006): Selected device EP4CE6E22C8 for design "fpga"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE10E22C8 is compatible
+    Info (176445): Device EP4CE15E22C8 is compatible
+    Info (176445): Device EP4CE22E22C8 is compatible
+Info (169124): Fitter converted 5 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location 6
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location 8
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location 12
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location 13
+    Info (169125): Pin ~ALTERA_nCEO~ is reserved at location 101
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "A" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "K" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "N" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "Y" is assigned to location or region, but does not exist in design
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info: Quartus Prime I/O Assignment Analysis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4928 megabytes
+    Info: Processing ended: Sat Dec 13 16:20:24 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++--------------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                        ;
++--------------+----------------+--------------+------------+---------------+----------------+
+; Name         ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++--------------+----------------+--------------+------------+---------------+----------------+
+; Location     ;                ;              ; A          ; PIN_1         ; QSF Assignment ;
+; Location     ;                ;              ; K          ; PIN_106       ; QSF Assignment ;
+; Location     ;                ;              ; N          ; PIN_1         ; QSF Assignment ;
+; Location     ;                ;              ; Y          ; PIN_54        ; QSF Assignment ;
+; I/O Standard ; fpga           ;              ; A          ; 3.0-V LVTTL   ; QSF Assignment ;
++--------------+----------------+--------------+------------+---------------+----------------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/User/Downloads/.idea/hi/html_file/output_files/fpga.pin.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                                                                                                        ;
++----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                            ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
++----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+; 1        ; 0          ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 2        ; 1          ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 3        ; 2          ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 4        ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 5        ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 6        ; 5          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
+; 7        ; 6          ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 8        ; 7          ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
+; 9        ; 9          ; 1        ; ^nSTATUS                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 10       ; 13         ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 11       ; 14         ; 1        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 12       ; 15         ; 1        ; ~ALTERA_DCLK~                                             ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
+; 13       ; 16         ; 1        ; ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP          ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
+; 14       ; 17         ; 1        ; ^nCONFIG                                                  ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 15       ; 18         ; 1        ; #TDI                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; 16       ; 19         ; 1        ; #TCK                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; 17       ;            ; 1        ; VCCIO1                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 18       ; 20         ; 1        ; #TMS                                                      ; input  ;              ;         ; --         ;                 ; --       ; --           ;
+; 19       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 20       ; 21         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
+; 21       ; 22         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 22       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 23       ; 24         ; 1        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 24       ; 25         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 25       ; 26         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 26       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 27       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 28       ; 31         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 29       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 30       ; 34         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 31       ; 36         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 32       ; 39         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 33       ; 40         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 34       ; 41         ; 2        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 35       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; 36       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 37       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 38       ; 45         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 39       ; 46         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 40       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 41       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 42       ; 52         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 43       ; 53         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 44       ; 54         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 45       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 46       ; 58         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; 47       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 48       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 49       ; 68         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 50       ; 69         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 51       ; 70         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 52       ; 72         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 53       ; 73         ; 3        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 54       ; 74         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 55       ; 75         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 56       ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 57       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 58       ; 80         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 59       ; 83         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 60       ; 84         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 61       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 62       ;            ; 4        ; VCCIO4                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 63       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 64       ; 89         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 65       ; 90         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; 66       ; 93         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 67       ; 94         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 68       ; 96         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 69       ; 97         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 70       ; 98         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 71       ; 99         ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 72       ; 100        ; 4        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 73       ; 102        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 74       ; 103        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 75       ; 104        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 76       ; 106        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 77       ; 107        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 78       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 79       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 80       ; 113        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 81       ;            ; 5        ; VCCIO5                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 82       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 83       ; 117        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 84       ; 118        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 85       ; 119        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 86       ; 120        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 87       ; 121        ; 5        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 88       ; 125        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 89       ; 126        ; 5        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 90       ; 127        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 91       ; 128        ; 6        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 92       ; 129        ; 6        ; ^CONF_DONE                                                ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 93       ;            ; 6        ; VCCIO6                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 94       ; 130        ; 6        ; ^MSEL0                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 95       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 96       ; 131        ; 6        ; ^MSEL1                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 97       ; 132        ; 6        ; ^MSEL2                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 97       ; 133        ; 6        ; ^MSEL3                                                    ;        ;              ;         ; --         ;                 ; --       ; --           ;
+; 98       ; 136        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 99       ; 137        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 100      ; 138        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 101      ; 139        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 102      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 103      ; 140        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 104      ; 141        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 105      ; 142        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; 106      ; 146        ; 6        ; GND*                                                      ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 107      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
+; 108      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 109      ;            ;          ; VCCD_PLL2                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 110      ; 152        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 111      ; 154        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 112      ; 155        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 113      ; 156        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 114      ; 157        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 115      ; 158        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 116      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 117      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 118      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 119      ; 163        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; 120      ; 164        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 121      ; 165        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 122      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 123      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 124      ; 173        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 125      ; 174        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 126      ; 175        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 127      ; 176        ; 7        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 128      ; 177        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 129      ; 178        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 130      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 131      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 132      ; 181        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 133      ; 182        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 134      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
+; 135      ; 185        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 136      ; 187        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; 137      ; 190        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 138      ; 191        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 139      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
+; 140      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
+; 141      ; 195        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 142      ; 201        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 143      ; 202        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; 144      ; 203        ; 8        ; GND*                                                      ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; EPAD     ;            ;          ; GND                                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
++----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 4 / 11 ( 36 % ) ; 3.3V          ; --           ;
+; 2        ; 0 / 8 ( 0 % )   ; 3.3V          ; --           ;
+; 3        ; 0 / 11 ( 0 % )  ; 3.3V          ; --           ;
+; 4        ; 0 / 14 ( 0 % )  ; 3.3V          ; --           ;
+; 5        ; 0 / 13 ( 0 % )  ; 3.3V          ; --           ;
+; 6        ; 1 / 10 ( 10 % ) ; 3.3V          ; --           ;
+; 7        ; 0 / 13 ( 0 % )  ; 3.3V          ; --           ;
+; 8        ; 0 / 12 ( 0 % )  ; 3.3V          ; --           ;
++----------+-----------------+---------------+--------------+
+
+
++----------------------------------+
+; I/O Assignment Analysis Messages ;
++----------------------------------+
+Warning (11747): Analysis and Synthesis (quartus_map) with top-level entity name "fpga" was not run before running I/O Assignment Analysis -- I/O Assignment Analysis will check only I/O assignments on the reserved pins
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (119006): Selected device EP4CE6E22C8 for design "fpga"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE10E22C8 is compatible
+    Info (176445): Device EP4CE15E22C8 is compatible
+    Info (176445): Device EP4CE22E22C8 is compatible
+Info (169124): Fitter converted 5 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location 6
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location 8
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location 12
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location 13
+    Info (169125): Pin ~ALTERA_nCEO~ is reserved at location 101
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "A" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "K" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "N" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "Y" is assigned to location or region, but does not exist in design
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Info: Quartus Prime I/O Assignment Analysis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4928 megabytes
+    Info: Processing ended: Sat Dec 13 16:20:24 2025
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
